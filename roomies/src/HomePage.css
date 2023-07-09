@@ -1,0 +1,35 @@
+.homepage {
+    text-align: center;
+}
+
+.homepage-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+.homepage-header img {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.homepage-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button {
+    background-color: #282c34;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
