@@ -1,5 +1,7 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BoundarySetting from './components/BoundarySetting'; // Make sure the path is correct
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <BoundarySetting />
+      </main>
     </div>
   );
 }
