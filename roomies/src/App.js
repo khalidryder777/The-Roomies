@@ -5,11 +5,11 @@ import BoundarySetting from './components/BoundarySetting'; // Make sure the pat
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="App"> {/* The root container of the application */}
+      <header className="App-header"> {/* The header section */}
+        <img src={logo} className="App-logo" alt="logo" /> {/* Displaying the logo */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload. {/* A message to instruct users to edit the file */}
         </p>
         <a
           className="App-link"
@@ -17,11 +17,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React {/* A link to the React documentation */}
         </a>
       </header>
       <main>
-        <BoundarySetting />
+        <BoundarySetting /> {/* Rendering the BoundarySetting component */}
       </main>
     </div>
   );
