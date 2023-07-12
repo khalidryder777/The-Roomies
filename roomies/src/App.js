@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BoundarySetting from './components/BoundarySetting'; // Make sure the path is correct
+import HouseRules from './components/HouseRules'; // Make sure the path is correct
+
 
 function App() {
   return (
@@ -21,7 +23,10 @@ function App() {
         </a>
       </header>
       <main>
+        {/* Boundary Setting is meant to include a series of prompts whose goal is to calm the user, and to understand the basis of the conflict from both parties */}
         <BoundarySetting />
+        {/*  HouseRules includes CRUD operations for our app */}
+        <HouseRules />  {/* New line for HouseRules */}
       </main>
     </div>
   );
