@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 function BoundarySetting() {
-    const [userEmotion, setUserEmotion] = useState('');
-    const [responseMessage, setResponseMessage] = useState('');
+    const [userEmotion, setUserEmotion] = useState(''); // State to hold user's selected emotion
+    const [responseMessage, setResponseMessage] = useState(''); // State to hold the response message
 
     const handleEmotionInput = (e) => {
-        setUserEmotion(e.target.value);
+        setUserEmotion(e.target.value); // Update the user's selected emotion
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevent form submission and page reload
         let response = '';
 
         switch (userEmotion) {
@@ -32,27 +32,27 @@ function BoundarySetting() {
                 response = '';
         }
 
-        setResponseMessage(response);
+        setResponseMessage(response); // Update the response message based on the user's selected emotion
     }
 
     return (
         <div>
-            <h2>Boundary Setting</h2>
-            <p>Before we start, let's check in. How are you feeling right now?</p>
-            <form onSubmit={handleSubmit}>
+            <h2>Boundary Setting</h2> {/* Heading */}
+            <p>Before we start, let's check in. How are you feeling right now?</p> {/* Instruction */}
+            <form onSubmit={handleSubmit}> {/* Form for emotion selection */}
                 <label>
                     <select value={userEmotion} onChange={handleEmotionInput}>
-                        <option value="">Select your current emotion</option>
-                        <option value="happy">Happy</option>
+                        <option value="">Select your current emotion</option> {/* Default option */}
+                        <option value="happy">Happy</option> {/* Emotion options */}
                         <option value="neutral">Neutral</option>
                         <option value="anxious">Anxious</option>
                         <option value="angry">Angry</option>
                         <option value="sad">Sad</option>
                     </select>
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" /> {/* Submit button */}
             </form>
-            {responseMessage && <p>{responseMessage}</p>}
+            {responseMessage && <p>{responseMessage}</p>} {/* Display the response message if available */}
         </div>
     );
 }
