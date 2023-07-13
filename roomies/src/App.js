@@ -1,27 +1,20 @@
 import React from 'react';
 import './App.css';
-import ChoresTracker from './components/ChoresTracker';
-import BillSplitter from './components/BillSplitter';
 import HouseRules from './components/HouseRules';
-import Fun from './components/Fun';
-import ChitChat from './components/ChitChat';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import BoundarySetting from './components/BoundarySetting'; // Assuming the path is correct
+import HomePage from './components/HomePage'; // Assuming the path is correct
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
-          <Route path="/house-rules">
-            <HouseRules />
-          </Route>
-          <Route path="/boundary-setting">
-            <BoundarySetting />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/house-rules" element={<HouseRules />} />
+          <Route path="/boundary-setting" element={<BoundarySetting />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </div>
     </Router>
   );
