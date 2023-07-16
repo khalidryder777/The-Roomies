@@ -4,6 +4,7 @@ import HouseRules from './components/HouseRules';
 import BoundarySetting from './components/BoundarySetting';
 import HomePage from './components/HomePage';
 import BillSplitter from './components/BillSplitter/BillSplitter';  // Assuming the path is correct
+import UserForm from './components/UserForm/UserForm'; // New line, ensure this path is correct
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route path="/login" element={<UserForm />} /> 
           <Route path="/house-rules" element={<HouseRules />} />
           <Route path="/boundary-setting" element={<BoundarySetting />} />
           <Route path="/bill-splitter" element={<BillSplitter />} />  
