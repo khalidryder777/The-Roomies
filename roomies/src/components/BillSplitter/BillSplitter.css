@@ -1,0 +1,12 @@
+.bill-splitter {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bill-splitter h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}

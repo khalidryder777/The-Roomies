@@ -12,7 +12,7 @@ function HomePage() {
             </header>
             <div className="homepage-buttons"> {/* Container for the buttons */}
                 <button className="button">Chores Tracker</button> {/* Button for chores tracker */}
-                <button className="button">Bill Splitter</button> {/* Button for bill splitter */}
+                <Link to="/bill-splitter"><button className="button">Bill Splitter</button></Link> {/* Button for bill splitter */}
                 <Link to="/house-rules"><button className="button">House Rules</button></Link> {/* Button for house rules */}   
                 <button className="button">Fun</button> {/* Button for fun activities */}
                 <button className="button">Chit-Chat</button> {/* Button for chit-chat */}
