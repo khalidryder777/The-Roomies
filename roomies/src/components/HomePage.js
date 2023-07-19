@@ -11,9 +11,9 @@ function HomePage() {
                 <h1>Welcome to Roomies!</h1> {/* Heading */}
             </header>
             <div className="homepage-buttons"> {/* Container for the buttons */}
-                <button className="button">Chores Tracker</button> {/* Button for chores tracker */}
+                <Link to="/chores-tracker"><button className="button">Chores Tracker</button></Link> 
                 <button className="button">Bill Splitter</button> {/* Button for bill splitter */}
-                <Link to="/house-rules"><button className="button">House Rules</button></Link> {/* Button for house rules */}   
+                <Link to="/house-rules"><button className="button">House Rules</button></Link> {/* Button for house rules */}
                 <button className="button">Fun</button> {/* Button for fun activities */}
                 <button className="button">Chit-Chat</button> {/* Button for chit-chat */}
             </div>
